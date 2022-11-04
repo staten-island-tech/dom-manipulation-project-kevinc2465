@@ -1,11 +1,12 @@
-const DOMSelector = {
+const DOMSelectors = {
   button: document.getElementById("btn"),
-  text: document.querySelector("#parent"),
-  box: document.getElementById("project"),
+  box: document.getElementById("container-box"),
+  input: document.querySelector(`#input`),
 };
 
-function backgroundAndText(background, text) {
-  background.style.backgroundColor = "green";
-  text.textContent = "This is a big red box";
-}
-backgroundAndText(DOMSelector.text);
+// DOMSelectors.box.insertAdjacentHTML("afterend", `<h1>We are an H1</h1>`);
+DOMSelectors.button.addEventListener("click", function () {
+  let input = DOMSelectors.input.value;
+  DOMSelectors.box.insertAdjacentHTML("beforeend", `<p> ${input}</p> `);
+  DOMSelectors.input.value = "";
+});
