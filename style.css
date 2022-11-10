@@ -1,11 +1,17 @@
+body{
+    background-color: yellow;
+}
+
 #container-box {
-    background-color: black;
-
     font-size: 2vh;
-    color: cornsilk;
+    color: azure;
     text-align: center;
+    background-color: blue;
+    height: 25rem;
+    width: 30rem;
+    margin-left: 40%;
+    margin-top: 3%;
+    font-size: 3rem;
 }
 
-.cat-poster {
-    width: 10rem;
-}
+
