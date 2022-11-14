@@ -1,8 +1,7 @@
 const DOMSelectors = {
-  button: document.getElementById("btn"),
+  button: document.getElementById("finish"),
   box: document.getElementById("container-box"),
   input: document.querySelector(`#input`),
-  reset: document.getElementById("reset"),
 };
 
 DOMSelectors.button.addEventListener("click", function () {
