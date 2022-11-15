@@ -5,22 +5,20 @@ body,
     margin: 0;
     font: 100%;
 }
-h1{
-    text-align: center;
+body{
+    background-color: chartreuse;
 }
 #container-box {
     color: white;
     height: 25rem;
-    width: 30rem;
-    margin-left: 40%;
-    margin-top: 3%;
     font-size: 1.5rem;
-    background-color:black;
+    text-align: center;
 }
 p{
-  margin-left: 5%;
-    margin-top: 7%;
+margin-top: 2%;
 }
+
+
 
 
 
