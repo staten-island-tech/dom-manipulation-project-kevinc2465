@@ -9,15 +9,17 @@ body{
     background-color: chartreuse;
 }
 #container-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:40%;
+    align-items: center;
     color: white;
     height: 25rem;
     font-size: 1.5rem;
     text-align: center;
+    width: fit-content;
 }
-p{
-margin-top: 2%;
-}
-
 
 
 
