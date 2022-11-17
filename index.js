@@ -5,6 +5,7 @@ const DOMSelectors = {
   input: document.querySelector(`#input1`),
   data: document.querySelector(`#input2`),
   info: document.querySelector(`#input3`),
+  result: document.getElementById("result"),
 };
 
 DOMSelectors.button1.addEventListener("click", function () {
@@ -17,4 +18,8 @@ DOMSelectors.button1.addEventListener("click", function () {
   let data = DOMSelectors.data.value;
   DOMSelectors.box.insertAdjacentHTML("afterend", `<p>${data}</p> `);
   DOMSelectors.data.value = "";
+});
+
+DOMSelectors.button2.addEventListener("click", function () {
+  document.getElementById("container-box").reset();
 });
