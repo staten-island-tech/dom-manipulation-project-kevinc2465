@@ -7,12 +7,14 @@ body,
 }
 body{
     background-color: rgb(219, 7, 61);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-#container-box {
+#form-box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left:40%;
     align-items: center;
     color: rgb(142, 199, 210);
     height: 25rem;
@@ -20,20 +22,22 @@ body{
     text-align: center;
     width: fit-content;
 }
-#sections {
+
+#result-box {
     display: flex;
-    flex-direction: row;
+    align-content: space-around;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
-  }
-#result{ 
+}
+
+.result{ 
     font-size: 3rem;
     background-color: rgb(219, 165, 7);
     color: rgb(13, 105, 134);
     width: 10%;
     box-sizing: border-box;
     text-align: center;
+    
 }
 
 
