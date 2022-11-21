@@ -6,7 +6,7 @@ body,
     font: 100%;
 }
 body{
-    background-color: chartreuse;
+    background-color: rgb(219, 7, 61);
 }
 #container-box {
     display: flex;
@@ -14,20 +14,27 @@ body{
     justify-content: space-around;
     margin-left:40%;
     align-items: center;
-    color: white;
+    color: rgb(142, 199, 210);
     height: 25rem;
     font-size: 1.5rem;
     text-align: center;
     width: fit-content;
 }
-#result{
-    background-color: turquoise;
-    width: 20rem;
+#sections {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+#result{ 
+    font-size: 3rem;
+    background-color: rgb(219, 165, 7);
+    color: rgb(13, 105, 134);
+    width: 10%;
+    box-sizing: border-box;
+    text-align: center;
 }
-
 
 
 
