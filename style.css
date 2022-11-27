@@ -31,13 +31,14 @@ body{
     align-items: center;
 }
 
-p{ 
+.result{ 
+    display: flex;
+    flex-direction: row;
     font-size: 3rem;
     background-color: rgb(219, 165, 7);
     color: rgb(13, 105, 134);
     width: 10%;
     box-sizing: border-box;
-    text-align: center;
 }
 
 
