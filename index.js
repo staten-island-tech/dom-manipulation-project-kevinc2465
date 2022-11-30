@@ -6,7 +6,6 @@ const DOMSelectors = {
   input: document.querySelector(".input1"),
   data: document.querySelector(".input2"),
   info: document.querySelector(".input3"),
-  // remove: document.querySelector(".remove"),
 };
 
 let input = DOMSelectors.input.value;
@@ -30,16 +29,17 @@ function makeHTML() {
     DOMSelectors.input.value = "";
     DOMSelectors.data.value = "";
     DOMSelectors.info.value = "";
-  });
-}
+  })
+};
 
-function removebtn() {
-  let cancels = document.querySelectorAll(".cancel");
+const cancels = document.querySelectorAll(".cancel");
+const result = document.querySelector(".result");
+function removebtn() {  
   cancels.forEach((cancel) => {
-    cancel.addEventListener("click", function (event) {
-      event.target.remove();
-    });
-  });
-}
+    cancel.addEventListener("click", function () {
+      result.remove();
+    })
+  })
+};
 makeHTML();
 removebtn();
