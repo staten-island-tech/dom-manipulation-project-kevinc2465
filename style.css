@@ -7,8 +7,7 @@ body,
 }
 body{
     background-color: rgb(219, 7, 61);
-
-
+    font-family: 'Anek Devanagari', sans-serif;
 }
 #form-box {
     display: flex;

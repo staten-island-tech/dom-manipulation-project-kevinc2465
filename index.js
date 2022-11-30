@@ -9,11 +9,9 @@ const DOMSelectors = {
   // remove: document.querySelector(".remove"),
 };
 
-
 let input = DOMSelectors.input.value;
 let data = DOMSelectors.data.value;
 let info = DOMSelectors.info.value;
-let remove = document.querySelector(".remove");
 
 //listen for form submit
 function makeHTML() {
@@ -25,19 +23,23 @@ function makeHTML() {
       <p class="individual-result"> ${DOMSelectors.input.value}</p> 
       <p class="individual-result"> ${DOMSelectors.data.value}</p> 
       <p class="individual-result"> ${DOMSelectors.info.value}</p> 
-      <button class="remove">Remove</button>
+      <button class="cancel">Remove</button>
       </div>
       `
-    )
+    );
     DOMSelectors.input.value = "";
     DOMSelectors.data.value = "";
     DOMSelectors.info.value = "";
-  })};   
-  
-// let remove =  document.querySelector(".remove");
+  });
+}
+
 function removebtn() {
-  DOMSelectors.remove.addEventListener("click", function (event) {
-    event.target.remove();
-})};
+  let cancels = document.querySelectorAll(".cancel");
+  cancels.forEach((cancel) => {
+    cancel.addEventListener("click", function (event) {
+      event.target.remove();
+    });
+  });
+}
 makeHTML();
 removebtn();
