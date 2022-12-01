@@ -6,7 +6,7 @@ const DOMSelectors = {
   input: document.querySelector(".input1"),
   data: document.querySelector(".input2"),
   info: document.querySelector(".input3"),
-}
+};
 
 let input = DOMSelectors.input.value;
 let data = DOMSelectors.data.value;
@@ -14,9 +14,9 @@ let info = DOMSelectors.info.value;
 
 //listen for form submit
 function makeHTML() {
-    DOMSelectors.resultbox.insertAdjacentHTML(
-      "beforeend",
-      `
+  DOMSelectors.resultbox.insertAdjacentHTML(
+    "beforeend",
+    `
       <div class="result">
       <p class="individual-result"> ${DOMSelectors.input.value}</p> 
       <p class="individual-result"> ${DOMSelectors.data.value}</p> 
@@ -24,25 +24,23 @@ function makeHTML() {
       <button type="button" class="cancel">Remove</button>
       </div>
       `
-    )
-};
+  );
+}
 function clearField() {
   DOMSelectors.input.value = "";
   DOMSelectors.data.value = "";
   DOMSelectors.info.value = "";
 }
-const cancels = document.querySelectorAll(".cancel");
-const result = document.querySelector(".result");
-function removebtn() {  
-  cancels.forEach((cancel) => {
-    cancel.addEventListener("click", function (result) {
-      result.remove();
-    })  
-    })
-};
+
+function removebtn() {
+  document.querySelectorAll(".cancel").forEach((cancel) => {
+    cancel.addEventListener("click", function () {
+      cancel.parentElement.remove();
+    });
+  });
+}
 DOMSelectors.submit.addEventListener("click", function () {
-makeHTML();
-clearField();
-removebtn();
+  makeHTML();
+  clearField();
+  removebtn();
 });
-    console.log(result)
