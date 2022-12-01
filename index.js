@@ -6,7 +6,7 @@ const DOMSelectors = {
   input: document.querySelector(".input1"),
   data: document.querySelector(".input2"),
   info: document.querySelector(".input3"),
-};
+}
 
 let input = DOMSelectors.input.value;
 let data = DOMSelectors.data.value;
